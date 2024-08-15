@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "build": "npm tsc",
+    "build": "tsc",
     "test": "jest",
-    "start": "npx tsc && node server.js",
+    "start": "tsc && node ./dist/server.js",
     "dev": "nodemon server.js"
     
   },
