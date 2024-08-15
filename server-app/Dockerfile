@@ -17,7 +17,7 @@ RUN npm ci && npm cache clean --force
 COPY /server-app .
 
 
-RUN  run build
+RUN  npm run build
 # Document the port that may need to be published
 EXPOSE 8000
 
