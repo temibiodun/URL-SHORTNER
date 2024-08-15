@@ -9,14 +9,13 @@ WORKDIR /build
 COPY /server-app/package*.json ./
 
 # Install production dependencies and clean the cache
-RUN npm ci --omit=dev && npm cache clean --force
+RUN npm ci && npm cache clean --force
 
 
 
 # Copy the entire source code into the container
-COPY . .
+COPY /server-app .
 
-RUN npm Install
 
 RUN  run build
 # Document the port that may need to be published
