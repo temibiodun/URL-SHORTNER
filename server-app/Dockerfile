@@ -1,5 +1,5 @@
-# Use Node 20.16 alpine as base image
-FROM node:20.16-alpine3.19 AS base
+# Use Node 20.16 alpine as base ima
+FROM node:21-alpine
 
 # Change the working directory to /build
 WORKDIR /build
