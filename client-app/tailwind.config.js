@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        banner: "url('./src/assets/bg-image.webp')"
+        banner: "url('./assets/bg-image.webp')"
 
       }, 
     },
